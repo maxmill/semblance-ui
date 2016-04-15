@@ -1,0 +1,20 @@
+{
+  "name": "semblance",
+  "version": "0.2.0",
+  "description": "Sensible defaults for the semantic web ",
+  "devDependencies":{
+    "node-sass":"*",
+    "postcss":"*",
+    "autoprefixer":"*",
+    "watch":"*"
+
+  },
+  "scripts": {
+       "clean": "npm cache clean && rm -rf node_modules bin data",
+       "scss": "node-sass --output-style compressed -o ./css ./scss",
+       "autoprefixer": "postcss -u autoprefixer -r ./css/*",
+       "build": "npm run scss # && npm run autoprefixer",
+       "watch": "watch 'npm run build' scss"
+   },
+  "license": "MIT"
+}
