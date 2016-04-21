@@ -12,6 +12,7 @@
         "watch": "*"
     },
     "scripts": {
+        "postinstall":"npm link",
         "clean": "npm cache clean && rm -rf node_modules bin data",
         "build:scss": "node-sass --output-style compressed -o ./css ./scss",
         "build:css": "postcss --map.annotation -u autoprefixer -r ./css/*",
