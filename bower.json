@@ -1,0 +1,17 @@
+{
+  "name": "semblance-ui",
+  "description": "Sensible defaults for the semantic web",
+  "main": "css/app.css",
+  "authors": [
+    "Max Millien <maxmillien@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://maxmill.github.io/semblance-ui/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
