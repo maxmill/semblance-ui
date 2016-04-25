@@ -1,6 +1,6 @@
 # Semblance - Sensible defaults for the semantic web
 
-Demo - http://maxmill.github.io/semblance/
+Demo - https://github.com/maxmill/semblance-ui
 
 ## get started
 ```
