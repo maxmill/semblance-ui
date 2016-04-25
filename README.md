@@ -1,5 +1,12 @@
 # Semblance - Sensible defaults for the semantic web
 
+Demo - http://maxmill.github.io/semblance/
+
+## get started
+```
+    npm i semblance
+    bower i semblance
+```
 ## roadmap
 
   - add more common adaptive classes and form/table/navigation variants
