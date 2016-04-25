@@ -1,7 +1,11 @@
 {
     "name": "semblance",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Sensible defaults for the semantic web",
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/maxmill/semblance.git"
+    },
     "devDependencies": {
         "autoprefixer": "*",
         "http-server": "0.9.x",
