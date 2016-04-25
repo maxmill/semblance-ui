@@ -1,4 +1,3 @@
-
 // Color Palette
 
 $black:#000;
@@ -33,11 +32,10 @@ $palette-light-blue:#91B0D9;
 $palette-light-orange:#FF8547;
 
 
-// Color
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
 $color-initial: $white;
 $color-primary: $palette-orange !default;
 $color-secondary: lighten($black,35%) !default;
-$color-tertiary: lighten($palette-light-yellow,15%) !default;
-$color-quaternary: lighten($black,75%)!default;
+$color-primary-complement: lighten($palette-light-yellow,15%) !default;
+$color-secondary-complement: lighten($black,75%)!default;
+
+$grid-max-width: 112.0rem;

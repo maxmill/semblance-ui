@@ -1,7 +1,3 @@
-
-// Form
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
 input[type='email'],
 input[type='number'],
 input[type='password'],
@@ -13,7 +9,7 @@ textarea,
 select {
 	appearance: none; // Removes awkward default styles on some inputs for iOS
 	background-color: transparent;
-	border: .1rem solid $color-quaternary;
+	border: .1rem solid $color-secondary-complement;
 	border-radius: .4rem;
 	box-shadow: none;
 	box-sizing: border-box;

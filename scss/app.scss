@@ -1,22 +1,14 @@
-// global styles/mixins,
-
 // building blocks
 @import "_functions";
 @import "_variables";
-
-// Mixins
 @import "_mixins";
 @import "_gradients";
 
-// 3rd-party styles integration
-@import "_vendor";
+// global styles
 @import "_base";
-
-// default styles
 @import '_form';
 @import '_grid';
 @import '_table';
 @import '_typography';
-
-// components
 @import '_button';
+@import '_utils';

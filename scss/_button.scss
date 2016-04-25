@@ -1,7 +1,3 @@
-
-// Button
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
 .button,
 button,
 input[type='button'],
@@ -25,36 +21,42 @@ input[type='submit'] {
 	text-transform: uppercase;
 	white-space: nowrap;
 
+
 	&:hover,
 	&:focus {
 		background-color: $color-secondary;
 		border-color: $color-secondary;
 		color: $color-initial;
 		outline: 0;
+        @include gradient-animate(135deg,$palette-bright-purple,$palette-dark-orange);
 	}
 
-	&.button-outline {
+
+
+	&.button-outline ,	&.button-clear {
 		color: $color-primary;
 		background-color: transparent;
-
 		&:hover,
 		&:focus {
 			color: $color-secondary;
 			background-color: transparent;
-			border-color: $color-secondary;
+			border-color: $white;
+
+            @include gradient-animate(135deg, lighten($palette-light-red,17%),lighten($palette-light-orange,10%));
 		}
 	}
 
 	&.button-clear {
-		color: $color-primary;
 		background-color: transparent;
 		border-color: transparent;
-
 		&:hover,
 		&:focus {
-			color: $color-secondary;
-			background-color: transparent;
 			border-color: transparent;
 		}
 	}
+}
+
+.button,
+button {
+    margin-bottom: 1rem;
 }

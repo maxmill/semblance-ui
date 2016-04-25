@@ -12,7 +12,6 @@
 <summary>
 <time>
 <address>
-<hr>
 
 tables  - <col> <colgroup> <caption>
 forms   - <select> <option> <optiongroup>
