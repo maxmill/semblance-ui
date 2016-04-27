@@ -4,8 +4,8 @@ Demo - http://maxmill.github.io/semblance-ui/
 
 ## get started
 ```
-    npm i semblance
-    bower i semblance
+    npm i semblance-ui
+    bower i semblance-ui
 ```
 ## roadmap
 
