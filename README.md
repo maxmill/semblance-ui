@@ -5,14 +5,18 @@ Demo - http://maxmill.github.io/semblance-ui/
 ## get started
 ```
     npm i semblance-ui
+or
     bower i semblance-ui
 ```
+sass toolkit: semblance-ui/scss/_semblance-ui.scss
+minified css: semblance-ui/css/app.css
+
 ## roadmap
 
   - add more common adaptive classes and form/table/navigation variants
   - add support for more preprocessors
 
-### element defaults
+### todo | more element defaults
 ```
 <figcaption>
 <figure>
@@ -23,7 +27,7 @@ Demo - http://maxmill.github.io/semblance-ui/
 tables  - <col> <colgroup> <caption>
 forms   - <select> <option> <optiongroup>
 ```
-### role default styles
+### todo | role default styles
 ```
 banner          - top navbar
 heading         - header font styles and bottom margin
