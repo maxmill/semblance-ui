@@ -1,19 +1,24 @@
 {
     "name": "semblance-ui",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "description": "Sensible defaults for the semantic web",
+    "keywords": [
+        "sass",
+        "styles",
+        "css"
+    ],
     "repository": {
         "type": "git",
         "url": "https://www.github.com/maxmill/semblance-ui.git"
     },
     "devDependencies": {
-        "autoprefixer": "*",
+        "autoprefixer": "6.x",
         "http-server": "0.9.x",
         "live-reload": "1.x",
-        "node-sass": "*",
+        "node-sass": "3.x",
         "parallelshell": "2.x",
         "postcss-cli": "2.5.x",
-        "watch": "*"
+        "watch": "0.17.x"
     },
     "scripts": {
         "clean": "npm cache clean && rm -rf node_modules bin data",
