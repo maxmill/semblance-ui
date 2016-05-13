@@ -1,0 +1,35 @@
+{
+    "name": "semblance-ui",
+    "version": "0.3.4",
+    "description": "Sensible defaults for the semantic web",
+    "keywords": [
+        "sass",
+        "styles",
+        "css"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/maxmill/semblance-ui.git"
+    },
+    "devDependencies": {
+        "autoprefixer": "6.x",
+        "http-server": "0.9.x",
+        "live-reload": "1.x",
+        "node-sass": "3.x",
+        "parallelshell": "2.x",
+        "postcss-cli": "2.5.x",
+        "watch": "0.17.x"
+    },
+    "scripts": {
+        "clean": "npm cache clean && rm -rf node_modules bin data",
+        "build:scss": "node-sass --output-style compressed -o ./css ./scss",
+        "build:css": "postcss --map.annotation -u autoprefixer -r ./css/*",
+        "build": "npm run build:scss",
+        "postbuild": "npm run build:css  #sourcemaps, vendor-prefixes",
+        "watch": "watch 'npm run build' scss #rebuild on scss file changes",
+        "serve": "http-server -p 9090 ./",
+        "livereload": "live-reload --port 9091 ./",
+        "start": "parallelshell 'npm run livereload' 'npm run serve' 'npm run watch'"
+    },
+    "license": "MIT"
+}
