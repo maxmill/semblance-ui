@@ -34,8 +34,6 @@ heading         - header font styles and bottom margin
 presentation    - something like bootstrap's well
 
 navigation      - (w/ .vertical .horizontal classes)
-  menu        -
-  menubar     - sidenav(left or right)
   toolbar     - component context navigation
 
 separator       - (w/ flex .vertical .horizontal classes)

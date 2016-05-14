@@ -3,7 +3,8 @@
   "description": "Sensible defaults for the semantic web",
   "main": "css/app.css",
   "authors": [
-    "Max Millien <maxmillien@gmail.com>"
+    "Max Millien <maxmillien@gmail.com>",
+    "Joel M Santo <joelmsanto@gmail.com>"
   ],
   "license": "MIT",
   "homepage": "http://maxmill.github.io/semblance-ui/",
