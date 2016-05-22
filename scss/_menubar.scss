@@ -1,12 +1,7 @@
 .nav {
   li {
     font-size: 1.6rem;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
+    padding: 1rem 3rem;
     list-style-type: none;
 
     .fa {
@@ -17,7 +12,7 @@
 
     &:hover,
     &.selected {
-      background-color: rgba(0,0,0,.05);
+      background-color: black(.05);
     }
   }
 }

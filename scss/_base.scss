@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-
 }
 
 body {
@@ -112,4 +111,22 @@ pre {
 .button,
 button {
     margin-bottom: 1rem;
+}
+
+// utility classes
+
+.clearfix {
+    @include clearfix();
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.text-center {
+    text-align: center;
 }

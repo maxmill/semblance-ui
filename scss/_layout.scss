@@ -1,0 +1,47 @@
+/*
+Layout Utility classes
+
+.(margin|padding)-(sm|md|lg|xl|xxl) { #property: $size; }
+
+.mar-md     (medium margin)
+
+
+specifying one side at a time
+
+.pad-t-sm   (small top padding)
+.mar-r-lg   (large right margin)
+
+*/
+
+@each $prop, $prop-abbrev in (
+    margin: mar,
+    padding: pad
+) {
+
+    @each $spacing, $spacing-var in (sm: $size-sm, md: $size-md, lg: $size-lg, xl: $size-xl, xxl: $size-xxl) {
+
+        .#{$prop-abbrev}-#{$spacing} {
+            #{$prop}: $spacing-var;
+        }
+
+        @each $side in (
+            top,
+            right,
+            bottom,
+            left
+        ) {
+            .#{$prop-abbrev}-#{$side}-#{$spacing} {
+                #{$prop}-#{$side}: $spacing-var;
+            }
+        }
+    }
+}
+
+
+
+/*
+    z-index depth class utilities
+    .z-depth-(1|2|3|4|5)
+*/
+
+@include make-z-depth-classes(true, .3s, ease-in, 4);
