@@ -1,7 +1,7 @@
 // Usage: @include font-size(18px);
 @mixin font-size($size) {
     font-size: $size;
-    font-size: calculateRem($size);
+    font-size: calculate-rem($size);
 }
 
 // Usage: @include hide-text;
@@ -35,7 +35,6 @@
     border-radius: 0;
     background-clip: content-box;
 }
-
 
 // Usage: @include image-2x("logo2x.png", 100px, 25px);
 @mixin image-2x($image, $width, $height) {
@@ -99,7 +98,9 @@
 
 // Usage: @include make-z-depth-classes(true,.3s,ease-in,4);
 @mixin make-z-depth-classes($animation: true, $time: .28s, $function: cubic-bezier(.4, 0, .2, 1), $max:5) {
-
+    @if $max > 7 {
+        $max: 7;
+    }
     @for $i from 1 to unquote($max + 1) {
         &.z-depth-#{$i} {
             @include z-depth($i);

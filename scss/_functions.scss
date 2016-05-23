@@ -1,6 +1,6 @@
-@function calculateRem($size) {
-    $remSize: $size / 14px;
-    @return $remSize * 1rem;
+@function calculate-rem($size) {
+    $rem-size: $size / 14px;
+    @return $rem-size * 1rem;
 }
 
 @function black($opacity) {

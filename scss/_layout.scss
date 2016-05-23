@@ -18,12 +18,11 @@ specifying one side at a time
     padding: pad
 ) {
 
-    @each $spacing, $spacing-var in (sm: $size-sm, md: $size-md, lg: $size-lg, xl: $size-xl, xxl: $size-xxl) {
+    @each $spacing, $spacing-var in (xs:$size-xs, sm: $size-sm, md: $size-md, lg: $size-lg, xl: $size-xl, xxl: $size-xxl) {
 
         .#{$prop-abbrev}-#{$spacing} {
             #{$prop}: $spacing-var;
         }
-
         @each $side in (
             top,
             right,
@@ -44,4 +43,4 @@ specifying one side at a time
     .z-depth-(1|2|3|4|5)
 */
 
-@include make-z-depth-classes(true, .3s, ease-in, 4);
+@include make-z-depth-classes();

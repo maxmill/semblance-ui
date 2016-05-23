@@ -1,6 +1,6 @@
 {
     "name": "semblance-ui",
-    "version": "0.5.0",
+    "version": "0.5.2",
     "description": "Sensible defaults for the semantic web",
     "contributors":[
       "Max Millien <maxmillien@gmail.com>",
@@ -25,11 +25,12 @@
         "watch": "0.17.x"
     },
     "scripts": {
-        "clean": "npm cache clean && rm -rf node_modules bin data",
-        "build:scss": "node-sass --output-style compressed -o ./css ./scss",
-        "build:css": "postcss --map.annotation --no-map.inline -u autoprefixer -r ./css/*",
-        "build": "npm run build:scss",
-        "postbuild": "npm run build:css  #sourcemaps, vendor-prefixes",
+        "clean": "npm cache clean && rm -rf node_modules",
+        "postcss": "postcss  --no-map.inline -u autoprefixer -r ./css/*  #sourcemaps, vendor-prefixes",
+        "scss": "node-sass --output-style compressed -o ./css ./scss",
+        "prebuild": "rm -rf ./css",
+        "build": "npm run scss",
+        "postbuild": "npm run postcss",
         "watch": "watch 'npm run build' scss #rebuild on scss file changes",
         "serve": "http-server -p 9090 ./",
         "livereload": "live-reload --port 9091 ./",
